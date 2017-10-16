@@ -1,0 +1,33 @@
+{
+    "name": "Otsu_beta",
+    "version": "0.0.1",
+    "description": "Use Otsu's method to caluclate optimal threshold ignoring nodata values.",
+    "properties": {
+        "isPublic": true,
+        "timeout": 7200
+    },
+    "inputPortDescriptors": [
+        {
+            "name": "image",
+            "type": "directory",
+            "description": "The data.",
+            "required": true
+        }
+    ],
+    "outputPortDescriptors": [
+        {
+            "name": "threshold",
+            "type": "string",
+            "description": "Otsu's threshold."
+        }
+    ],
+    "containerDescriptors": [
+        {
+            "type": "DOCKER",
+            "properties": {
+                "image": "venicegeo/otsu-task"
+            },
+            "command": "python /otsu-task.py"
+        }
+    ]
+}
