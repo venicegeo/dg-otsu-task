@@ -1,9 +1,9 @@
 {
     "name": "Otsu_beta",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "description": "Use Otsu's method to caluclate optimal threshold ignoring nodata values.",
     "properties": {
-        "isPublic": true,
+        "isPublic": false,
         "timeout": 7200
     },
     "inputPortDescriptors": [
