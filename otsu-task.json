@@ -25,7 +25,7 @@
         {
             "type": "DOCKER",
             "properties": {
-                "image": "venicegeo/otsu-task"
+                "image": "venicegeo/dg-otsu-task"
             },
             "command": "python /otsu-task.py"
         }
